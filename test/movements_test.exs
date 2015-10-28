@@ -12,6 +12,6 @@ defmodule MovementsTest do
 
     result = add(position, speed)
 
-    assert result == %Vector { x: 6, y: 4 }
+    assert result == vec(6, 4)
   end
 end

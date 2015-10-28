@@ -3,9 +3,9 @@ defmodule MovementsTest do
   doctest Movements
 
   alias Movements.Vector
+  import Vector, only: :functions
 
   test "Vectors can be added" do
-    import Vector, only: :functions
 
     position = vec(1, 1)
     speed = vec(5, 3)

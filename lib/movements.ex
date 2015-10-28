@@ -6,9 +6,25 @@ defmodule Movements do
       %Vector { x: x, y: y }
     end
 
-    def add(%Vector{ x: x1, y: y1 },
-            %Vector{ x: x2, y: y2 }) do
-      %Vector { x: x1 + x2, y: y2 + y1 }
+    def add(a, b) do
+      %Vector {
+        x: a.x + b.x,
+        y: a.y + b.y
+      }
+    end
+
+    def sub(a, b) do
+      %Vector {
+        x: a.x - b.x,
+        y: a.y - b.y
+      }
+    end
+
+    def multi(a, b) do
+      %Vector {
+        x: a.x * b.x,
+        y: a.y * b.y
+      }
     end
 
   end

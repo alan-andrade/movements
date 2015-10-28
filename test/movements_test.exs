@@ -22,7 +22,7 @@ defmodule MovementsTest do
 
   test "mul" do
     a = vec(2, 2)
-    b = vec(1, 3)
-    assert mul(a, b) == vec(2, 6)
+    n = 3
+    assert mul(a, n) == vec(6, 6)
   end
 end

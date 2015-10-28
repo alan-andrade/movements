@@ -8,6 +8,6 @@ defmodule Movements do
 
     def add(a, b), do: vec(a.x + b.x, a.y + b.y)
     def sub(a, b), do: vec(a.x - b.x, a.y - b.y)
-    def mul(a, b), do: vec(a.x * b.x, a.y * b.y)
+    def mul(a, n) when is_number(n), do: vec(a.x * n,   a.y * n)
   end
 end

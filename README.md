@@ -1,19 +1,8 @@
 # Movements
 
-**TODO: Add description**
+This is an implementation in Elixir of the topics covered in
+[Nature of code](http://natureofcode.com/).
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add movements to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:movements, "~> 0.0.1"}]
-        end
-
-  2. Ensure movements is started before your application:
-
-        def application do
-          [applications: [:movements]]
-        end
+# Contribute
+If you're interested in any of the subjects, create an issue and go for
+it. Let people know you're rocking a section :godmode:.

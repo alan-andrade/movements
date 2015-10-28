@@ -20,9 +20,9 @@ defmodule MovementsTest do
     assert sub(a, b) == vec(0, 0)
   end
 
-  test "multi" do
+  test "mul" do
     a = vec(2, 2)
     b = vec(1, 3)
-    assert multi(a, b) == vec(2, 6)
+    assert mul(a, b) == vec(2, 6)
   end
 end

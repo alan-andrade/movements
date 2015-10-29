@@ -8,10 +8,7 @@ defmodule MovementsTest do
   test "add" do
     position = vec(1, 1)
     speed = vec(5, 3)
-
-    result = add(position, speed)
-
-    assert result == vec(6, 4)
+    assert add(position, speed) == vec(6, 4)
   end
 
   test "sub" do
@@ -25,4 +22,11 @@ defmodule MovementsTest do
     n = 3
     assert mul(a, n) == vec(6, 6)
   end
+
+  test "div" do
+    a = vec(2, 4)
+    n = 2
+    assert divv(a, n) == vec(1, 2)
+  end
+
 end

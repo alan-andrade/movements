@@ -34,4 +34,18 @@ defmodule MovementsTest do
     assert mag(a) == :math.sqrt 9 + 4
   end
 
+  alias Movements.Object
+  import Object, only: :functions
+
+  test "obj" do
+    car = obj(vec(1, 2), vec(10, 10))
+    assert car.location == vec(1, 2)
+    assert car.velocity == vec(10, 10)
+    assert car.acceleration == vec(0, 0)
+  end
+
+  test "move" do
+    horse = obj(vec(2, 1), vec(1, 3))
+    assert move(horse) == vec(3, 4)
+  end
 end

@@ -10,5 +10,6 @@ defmodule Movements do
     def sub(a, b), do: vec(a.x - b.x, a.y - b.y)
     def mul(a, n) when is_number(n), do: vec(a.x * n, a.y * n)
     def divv(a, n) when is_number(n), do: vec(a.x / n, a.y / n)
+    def mag(a), do: :math.sqrt(a.x * a.x + a.y * a.y)
   end
 end

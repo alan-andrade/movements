@@ -29,4 +29,9 @@ defmodule MovementsTest do
     assert divv(a, n) == vec(1, 2)
   end
 
+  test "mag" do
+    a = vec(3, 2)
+    assert mag(a) == :math.sqrt 9 + 4
+  end
+
 end
